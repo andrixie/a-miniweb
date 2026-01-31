@@ -1,0 +1,182 @@
+%-------------------------
+% Resume in Latex
+% Author : Andrea Taguinod
+% Based off of: 
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{lmodern} % Use Latin Modern font for better font support
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+%----------HEADING----------
+
+\begin{center} {\Huge \scshape Andrea Taguinod} \\ \vspace{1pt} \small +1 (613) 263 7519 $|$ \href{mailto:andreataguinod@cmail.carleton.ca}{\underline{andreataguinod@cmail.carleton.ca}} $|$ \href{https://linkedin.com/in/andrea-taguinod}{\underline{LinkedIn}} $|$ \href{https://github.com/andrixie}{\underline{GitHub}}\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carleton University}{Ottawa, Ontario}
+      {Bachelor of Engineering, Communication Engineering | 4th Year}{Expected Graduation: April 2027}
+      \resumeItem{Relevant Courses: Object Oriented Programming, Imperative Programming, Computer Organization \& Architecture, Communication Theory (I, II), Signal \& Systems, Computer Networks, Electronics (I, II, III), Communication Software}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Skills}
+\resumeSubHeadingListStart
+  \resumeSubItem{\textbf{Languages:}}\hspace*{4.4em} C, Python, Java, JavaScript, MATLAB, Racket, HTML/CSS, SQL, Go
+  \resumeSubItem{\textbf{Technologies:}}\hspace*{3.4em} Linux, Docker, REST APIs, gRPC, Node.js, MATLAB Simulink
+  \resumeSubItem{\textbf{Development Tools:}}\hspace*{0em} Git, VS Code, IntelliJ, Bash, Wireshark, MATLAB R202b, LTspice, Ansys
+\resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{Video Streaming System: Frame-Synced GIF Playback} $|$ Python, Socket Programming, RTSP, RTP}{}
+      \resumeItemListStart
+      \resumeItem{Built a video streaming system using \textbf{Real-Time Streaming Protocol (RTSP)} for session control and \textbf{Real-Time Transport Protocol (RTP)} for packetized frame delivery, enabling frame-synced GIF playback.}
+      \resumeItem{Implemented client-side RTSP commands, reducing manual setup time from 3.0s up to 0.8s.}
+      \resumeItem{Designed loss and reordering logic to handle 5–10\% packet drop scenarios, reducing playback glitches by over 45\%.}
+    \resumeItemListEnd
+    \resumeProjectHeading
+    {\textbf{Acoustic Digital Messaging} $|$ MATLAB, Signal Processing, BPSK, Audio Transmission}{}
+      \resumeItemListStart
+      \resumeItem{Built an acoustic communication system in MATLAB to transmit digital messages using \textbf{Binary Phase Shift Keying (BPSK)}-modulated sound waves, enabling reliable data transfer over standard audio channels.}
+      \resumeItem{Implemented modulator and demodulator for BPSK signals to enable end-to-end digital communication.}
+      \resumeItem{Converted text to binary, applied BPSK modulation with RRC filtering, and generated waveforms.}
+      \resumeItem{Recovered symbols with over 95\% bit accuracy in noisy conditions using synchronization and matched filtering.} 
+      \resumeItemListEnd
+    \resumeProjectHeading
+    {\textbf{Network Packet Sniffer} $|$ C, Libpcap, Packet Filtering}{}
+      \resumeItemListStart
+      \resumeItem{Developed a packet sniffer in C using sockets to capture and analyze live TCP/UDP packets at the Ethernet layer.}
+      \resumeItem{Implemented advanced packet filtering mechanisms based on IP address, port number, and protocol type, enabling targeted analysis of specific network flows and reducing noise from irrelevant traffic.}
+      \resumeItem{Achieved real-time packet capture with minimal performance overhead by leveraging non-blocking I/O.}
+      \resumeItem{Provided insights into network traffic patterns, helping identify potential security threats and performance bottlenecks.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------(OTHER) WORK EXPERIENCE-----------
+\section{Other Work Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {Customer Service Manager (formerly Cashier)}{Sep 2020 -- Present}
+    {Walmart Canada}{Ottawa, ON / In-Person}
+    \resumeItemListStart
+      \resumeItem{Promoted from Cashier to Customer Service Manager, leading front-end operations and a team of cashiers.}
+      \resumeItem{Oversaw daily customer service tasks, resolved escalated concerns, improving improved satisfaction metrics.}
+      \resumeItem{Trained and mentored new hires on point-of-sale (POS) systems, transaction processing, and troubleshooting.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------Volunteer Experience-----------
+\section{Volunteer Experience}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {CUSA Women’s Centre}{2022 - Present}
+    {Carleton University}{Ottawa, ON / In-Person}
+    \resumeItemListStart
+      \resumeItem{Supported initiatives focused on gender equity, student wellbeing, and community outreach on campus.}
+      \resumeItem{Helped organize workshops and events that addressed topics like consent, empowerment, and mental health.}
+    \resumeItemListEnd
+    \resumeSubheading
+    {Volunteer Caretaker}{2023 - Present}
+    {Perley Health}{Ottawa, ON / In-Person}
+    \resumeItemListStart
+      \resumeItem{Provided companionship and support to residents in a long-term care facility.}
+      \resumeItem{Assisted with recreational activities, fostering social interaction and engagement among residents.}
+    \resumeItemListEnd
+  \resumeSubheading
+  {Member, IEEE (Institute of Electrical and Electronics Engineers)}{2025 -- Present}
+  {Ottawa Section}{Ottawa, ON / In-Person}
+  \resumeItemListStart
+    \resumeItem{Joined the world’s largest technical professional organization to stay current with advancements in electrical and computer engineering.}
+    \resumeItem{Engaged with IEEE student branch activities and accessed professional development resources and publications.}
+  \resumeItemListEnd
+\resumeSubHeadingListEnd
+\end{document}

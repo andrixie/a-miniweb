@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Andrea Taguinod - Communication Engineering Student</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Andrea Taguinod</div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <div class="hero-figure">
+                <img src="figure/EM-Wave.gif" alt="EM Wave Animation">
+            </div>
+            <h1>Andrea Taguinod</h1>
+            <p class="tagline">4th Year Communication Engineering Student | Carleton University</p>
+            <div class="hero-links">
+                <a href="mailto:andreataguinod@cmail.carleton.ca" class="cta-button">Get In Touch</a>
+                <a href="https://linkedin.com/in/andrea-taguinod" target="_blank" class="cta-button outline">LinkedIn</a>
+                <a href="https://github.com/andrixie" target="_blank" class="cta-button outline">GitHub</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <h2>About Me</h2>
+        <div class="about-content">
+            <div class="about-text">
+                <p>I'm a 4th year Communication Engineering student at Carleton University, expected to graduate in April 2027. I'm passionate about signal processing, network communications, and building robust systems that work reliably in real-world conditions.</p>
+                <p>Currently, I volunteer with the CUSA Women's Centre and Perley Health while working as a Customer Service Manager at Walmart Canada. I'm also a member of IEEE (Institute of Electrical and Electronics Engineers) and actively engage with the technical community.</p>
+            </div>
+            <div class="about-highlights">
+                <div class="highlight-item">
+                    <h3>📍 Location</h3>
+                    <p>Ottawa, Ontario</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>📞 Contact</h3>
+                    <p>+1 (613) 263 7519</p>
+                </div>
+                <div class="highlight-item">
+                    <h3>✉️ Email</h3>
+                    <p>andreataguinod@cmail.carleton.ca</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="skills">
+        <h2>Technical Skills</h2>
+        <div class="skills-grid">
+            <div class="skill-category">
+                <h3>Languages</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">C</span>
+                    <span class="skill-tag">Python</span>
+                    <span class="skill-tag">Java</span>
+                    <span class="skill-tag">JavaScript</span>
+                    <span class="skill-tag">MATLAB</span>
+                    <span class="skill-tag">HTML/CSS</span>
+                    <span class="skill-tag">SQL</span>
+                    <span class="skill-tag">Go</span>
+                    <span class="skill-tag">Racket</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Technologies</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Linux</span>
+                    <span class="skill-tag">Docker</span>
+                    <span class="skill-tag">REST APIs</span>
+                    <span class="skill-tag">gRPC</span>
+                    <span class="skill-tag">Node.js</span>
+                    <span class="skill-tag">MATLAB Simulink</span>
+                    <span class="skill-tag">Signal Processing</span>
+                    <span class="skill-tag">Network Protocols</span>
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Tools & Software</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Git</span>
+                    <span class="skill-tag">VS Code</span>
+                    <span class="skill-tag">IntelliJ</span>
+                    <span class="skill-tag">Bash</span>
+                    <span class="skill-tag">Wireshark</span>
+                    <span class="skill-tag">LTspice</span>
+                    <span class="skill-tag">Ansys</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>Video Streaming System: Frame-Synced GIF Playback</h3>
+                <p class="project-tech">Python • Socket Programming • RTSP • RTP</p>
+                <ul class="project-details">
+                    <li>Built a video streaming system using RTSP for session control and RTP for packetized frame delivery</li>
+                    <li>Implemented client-side RTSP commands, reducing manual setup time from 3.0s to 0.8s</li>
+                    <li>Designed loss and reordering logic to handle 5–10% packet drop scenarios, reducing glitches by 45%</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>Acoustic Digital Messaging</h3>
+                <p class="project-tech">MATLAB • Signal Processing • BPSK • Audio Transmission</p>
+                <ul class="project-details">
+                    <li>Built an acoustic communication system in MATLAB to transmit digital messages using BPSK-modulated sound waves</li>
+                    <li>Implemented modulator and demodulator for BPSK signals enabling end-to-end digital communication</li>
+                    <li>Achieved over 95% bit accuracy in noisy conditions using synchronization and matched filtering</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <h3>Network Packet Sniffer</h3>
+                <p class="project-tech">C • Libpcap • Packet Filtering • Network Analysis</p>
+                <ul class="project-details">
+                    <li>Developed a packet sniffer in C using sockets to capture and analyze live TCP/UDP packets</li>
+                    <li>Implemented advanced packet filtering based on IP address, port number, and protocol type</li>
+                    <li>Achieved real-time packet capture with minimal overhead using non-blocking I/O</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="experience" class="experience">
+        <h2>Experience & Involvement</h2>
+        <div class="experience-timeline">
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Customer Service Manager</h3>
+                    <span class="date">Sep 2020 – Present</span>
+                </div>
+                <p class="company">Walmart Canada • Ottawa, ON</p>
+                <ul class="experience-details">
+                    <li>Promoted from Cashier to Customer Service Manager, leading front-end operations</li>
+                    <li>Trained and mentored new hires on POS systems and customer service excellence</li>
+                    <li>Resolved escalated customer concerns and improved satisfaction metrics</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>Volunteer Caretaker</h3>
+                    <span class="date">2023 – Present</span>
+                </div>
+                <p class="company">Perley Health • Ottawa, ON</p>
+                <ul class="experience-details">
+                    <li>Provided companionship and support to residents in a long-term care facility</li>
+                    <li>Assisted with recreational activities fostering social interaction and engagement</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>CUSA Women's Centre</h3>
+                    <span class="date">2022 – Present</span>
+                </div>
+                <p class="company">Carleton University • Ottawa, ON</p>
+                <ul class="experience-details">
+                    <li>Supported initiatives focused on gender equity and student wellbeing</li>
+                    <li>Helped organize workshops on consent, empowerment, and mental health</li>
+                </ul>
+            </div>
+
+            <div class="experience-item">
+                <div class="experience-header">
+                    <h3>IEEE Member</h3>
+                    <span class="date">2025 – Present</span>
+                </div>
+                <p class="company">Institute of Electrical and Electronics Engineers</p>
+                <ul class="experience-details">
+                    <li>Member of the world's largest technical professional organization</li>
+                    <li>Engaged with IEEE student branch activities and professional development resources</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <h2>Let's Connect</h2>
+        <div class="contact-content">
+            <p>Feel free to reach out for collaboration opportunities, questions, or just to chat!</p>
+            <div class="contact-links">
+                <a href="mailto:andreataguinod@cmail.carleton.ca" class="contact-link">
+                    <span class="contact-icon">✉️</span>
+                    <span>Email</span>
+                </a>
+                <a href="https://linkedin.com/in/andrea-taguinod" target="_blank" class="contact-link">
+                    <span class="contact-icon">💼</span>
+                    <span>LinkedIn</span>
+                </a>
+                <a href="https://github.com/andrixie" target="_blank" class="contact-link">
+                    <span class="contact-icon">💻</span>
+                    <span>GitHub</span>
+                </a>
+                <a href="tel:+16132637519" class="contact-link">
+                    <span class="contact-icon">📱</span>
+                    <span>Phone</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <p>&copy; 2026 Andrea Taguinod. Built with HTML & CSS.</p>
+    </footer>
+</body>
+</html>
