@@ -1,12 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
+ <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrea Taguinod - Communication Engineering Student</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div id="fairy">🧚‍♀️</div>
     <nav class="navbar">
         <div class="nav-container">
             <div class="logo">Andrea Taguinod</div>
@@ -219,7 +221,38 @@
     </section>
 
     <footer class="footer">
-        <p>&copy; 2026 Andrea Taguinod. Built with HTML & CSS.</p>
+        <p>&copy; 2026 Andrea Taguinod.</p>
     </footer>
+
+<script>
+    function speakCute() {
+        const msg = new SpeechSynthesisUtterance("Hello there!");
+
+        const voices = speechSynthesis.getVoices();
+        const cuteVoice = voices.find(v =>
+          v.name.toLowerCase().includes("female") ||
+          v.name.toLowerCase().includes("samantha") ||
+          v.name.toLowerCase().includes("google") ||
+          v.name.toLowerCase().includes("zira")
+        );
+
+        if (cuteVoice) msg.voice = cuteVoice;
+
+        msg.pitch = 1.5;   // cuteness
+        msg.rate = 1.05;   // friendly speed
+        msg.volume = 1;
+
+        speechSynthesis.speak(msg);
+      }
+
+      document.addEventListener("click", () => {
+        speakCute();
+      }, { once: true });
+    /* Fairy follows cursor */
+    const fairy = document.getElementById("fairy");
+    document.addEventListener("mousemove", (e) => {
+        fairy.style.transform = `translate(${e.clientX + 12}px, ${e.clientY + 12}px)`;
+    });
+    </script>
 </body>
 </html>
