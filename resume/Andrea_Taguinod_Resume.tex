@@ -102,74 +102,76 @@
       {Carleton University}{Ottawa, Ontario}
       {Bachelor of Engineering, Communication Engineering | 4th Year}{Expected Graduation: April 2027}
       \resumeItem{Relevant Courses: Object Oriented Programming, Imperative Programming, Computer Organization \& Architecture, Communication Theory (I, II), Signal \& Systems, Computer Networks, Electronics (I, II, III), Communication Software}
+      
   \resumeSubHeadingListEnd
 
 %-----------SKILLS-----------
 \section{Skills}
 \resumeSubHeadingListStart
-  \resumeSubItem{\textbf{Languages:}}\hspace*{4.4em} C, Python, Java, JavaScript, MATLAB, Racket, HTML/CSS, SQL, Go
-  \resumeSubItem{\textbf{Technologies:}}\hspace*{3.4em} Linux, Docker, REST APIs, gRPC, Node.js, MATLAB Simulink
-  \resumeSubItem{\textbf{Development Tools:}}\hspace*{0em} Git, VS Code, IntelliJ, Bash, Wireshark, MATLAB R202b, LTspice, Ansys
+  \resumeSubItem{\textbf{Languages:}}\hspace*{4.4em} C, Python, Java, JavaScript, MATLAB, HTML/CSS, SQL, Go, Racket
+  \resumeSubItem{\textbf{Technologies:}}\hspace*{3.4em} Linux, Network Protocols, SDN, OpenDaylight, Ryu
+  \resumeSubItem{\textbf{Concentrations:}}\hspace*{2.4em} Signal Processing, Modulation Techniques
+  \resumeSubItem{\textbf{Tools \& Software:}}\hspace*{0.7em} MATLAB Simulink, Git, VS Code, IntelliJ, Bash, Wireshark, LTspice, Ansys
 \resumeSubHeadingListEnd
 
 
 %-----------PROJECTS-----------
 \section{Projects}
 \resumeSubHeadingListStart
-  \resumeProjectHeading
-    {\textbf{Video Streaming System: Frame-Synced GIF Playback} $|$ Python, Socket Programming, RTSP, RTP}{}
+    \resumeProjectHeading
+    {\textbf{SDN Congestion Control in Mininet} $|$ Python, Mininet, SDN, OpenFlow, Ryu}{}
       \resumeItemListStart
-      \resumeItem{Built a video streaming system using \textbf{Real-Time Streaming Protocol (RTSP)} for session control and \textbf{Real-Time Transport Protocol (RTP)} for packetized frame delivery, enabling frame-synced GIF playback.}
-      \resumeItem{Implemented client-side RTSP commands, reducing manual setup time from 3.0s up to 0.8s.}
-      \resumeItem{Designed loss and reordering logic to handle 5–10\% packet drop scenarios, reducing playback glitches by over 45\%.}
-    \resumeItemListEnd
+      \resumeItem{Built an \textbf{SDN-based} congestion control prototype using \textbf{Mininet} to emulate network topologies.}
+      \resumeItem{Implemented controller logic to monitor flow metrics and adjust routing under load.}
+      \resumeItem{Evaluated throughput and latency improvements across congested scenarios.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+    {\textbf{Wireless Channel Propagation Analyzer} $|$ MATLAB, Wireless Communications, Path Loss}{}
+      \resumeItemListStart
+      \resumeItem{Developed propagation models to simulate signal attenuation in various wireless environments.}
+      \resumeItem{Implemented \textbf{Friis transmission equation} and log-distance path loss models for coverage analysis.}
+      \resumeItem{Analyzed fading characteristics and optimized antenna placement for maximum signal strength.}
+      \resumeItemListEnd
+    \resumeProjectHeading
+    {\textbf{Multipath Interference Mitigation} $|$ Python, OFDM, Equalization, DSP}{}
+      \resumeItemListStart
+      \resumeItem{Implemented adaptive equalization techniques to combat multipath fading in wireless channels.}
+      \resumeItem{Applied \textbf{OFDM} modulation with cyclic prefix to reduce inter-symbol interference.}
+      \resumeItem{Achieved \textbf{30\%} improvement in bit error rate under severe multipath conditions.}
+      \resumeItemListEnd
     \resumeProjectHeading
     {\textbf{Acoustic Digital Messaging} $|$ MATLAB, Signal Processing, BPSK, Audio Transmission}{}
       \resumeItemListStart
-      \resumeItem{Built an acoustic communication system in MATLAB to transmit digital messages using \textbf{Binary Phase Shift Keying (BPSK)}-modulated sound waves, enabling reliable data transfer over standard audio channels.}
-      \resumeItem{Implemented modulator and demodulator for BPSK signals to enable end-to-end digital communication.}
-      \resumeItem{Converted text to binary, applied BPSK modulation with RRC filtering, and generated waveforms.}
-      \resumeItem{Recovered symbols with over 95\% bit accuracy in noisy conditions using synchronization and matched filtering.} 
+      \resumeItem{Built an acoustic communication system in MATLAB to transmit digital messages using \textbf{Binary Phase Shift Keying (BPSK)}-modulated sound waves.}
+      \resumeItem{Implemented modulator and demodulator for BPSK signals enabling end-to-end digital communication.}
+      \resumeItem{Achieved over \textbf{95\%} bit accuracy in noisy conditions using synchronization and matched filtering.}
       \resumeItemListEnd
     \resumeProjectHeading
     {\textbf{Network Packet Sniffer} $|$ C, Libpcap, Packet Filtering}{}
       \resumeItemListStart
-      \resumeItem{Developed a packet sniffer in C using sockets to capture and analyze live TCP/UDP packets at the Ethernet layer.}
-      \resumeItem{Implemented advanced packet filtering mechanisms based on IP address, port number, and protocol type, enabling targeted analysis of specific network flows and reducing noise from irrelevant traffic.}
-      \resumeItem{Achieved real-time packet capture with minimal performance overhead by leveraging non-blocking I/O.}
-      \resumeItem{Provided insights into network traffic patterns, helping identify potential security threats and performance bottlenecks.}
+      \resumeItem{Developed a packet sniffer in C using sockets to capture and analyze live \textbf{TCP/UDP} packets.}
+      \resumeItem{Implemented advanced packet filtering based on IP address, port number, and protocol type.}
+      \resumeItem{Achieved real-time packet capture with minimal overhead by leveraging non-blocking \textbf{I/O}.}
   \resumeItemListEnd
 \resumeSubHeadingListEnd
 
 %-----------(OTHER) WORK EXPERIENCE-----------
-\section{Other Work Experience}
-\resumeSubHeadingListStart
-  \resumeSubheading
-    {Customer Service Manager (formerly Cashier)}{Sep 2020 -- Present}
-    {Walmart Canada}{Ottawa, ON / In-Person}
-    \resumeItemListStart
-      \resumeItem{Promoted from Cashier to Customer Service Manager, leading front-end operations and a team of cashiers.}
-      \resumeItem{Oversaw daily customer service tasks, resolved escalated concerns, improving improved satisfaction metrics.}
-      \resumeItem{Trained and mentored new hires on point-of-sale (POS) systems, transaction processing, and troubleshooting.}
-    \resumeItemListEnd
-\resumeSubHeadingListEnd
-
 %-----------Volunteer Experience-----------
 \section{Volunteer Experience}
 \resumeSubHeadingListStart
   \resumeSubheading
-    {CUSA Women’s Centre}{2022 - Present}
+    {OEC-CIC Volunteer}{2025 - Present}
+    {Ontario Engineering Competition}{Ottawa, ON / In-Person}
+    \resumeItemListStart
+      \resumeItem{Supported event logistics and coordination for competition activities.}
+      \resumeItem{Assisted teams, judges, and organizers to ensure smooth competition flow.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {CUSA Women's Centre}{2022 - Present}
     {Carleton University}{Ottawa, ON / In-Person}
     \resumeItemListStart
       \resumeItem{Supported initiatives focused on gender equity, student wellbeing, and community outreach on campus.}
       \resumeItem{Helped organize workshops and events that addressed topics like consent, empowerment, and mental health.}
-    \resumeItemListEnd
-    \resumeSubheading
-    {Volunteer Caretaker}{2023 - Present}
-    {Perley Health}{Ottawa, ON / In-Person}
-    \resumeItemListStart
-      \resumeItem{Provided companionship and support to residents in a long-term care facility.}
-      \resumeItem{Assisted with recreational activities, fostering social interaction and engagement among residents.}
     \resumeItemListEnd
   \resumeSubheading
   {Member, IEEE (Institute of Electrical and Electronics Engineers)}{2025 -- Present}

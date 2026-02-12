@@ -1,0 +1,150 @@
+%-------------------------
+% Resume in Latex
+% Author : Andrea Taguinod
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage{lmodern}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]} 
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\Huge \scshape Andrea Taguinod} \\ \vspace{1pt}
+    \small +1 (613) 263 7519 $|$ \href{mailto:andreataguinod@cmail.carleton.ca}{\underline{andreataguinod@cmail.carleton.ca}} $|$ 
+    \href{https://linkedin.com/in/andrea-taguinod}{\underline{LinkedIn}} $|$
+    \href{https://github.com/andrixie}{\underline{GitHub}}
+\end{center}
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Carleton University}{Ottawa, Ontario}
+      {Bachelor of Engineering, Communication Engineering | 4th Year}{Expected Graduation: April 2027}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------
+\section{Technical Skills}
+\resumeSubHeadingListStart
+  \resumeSubItem{\textbf{Languages:}}\hspace*{4.4em} C, Python, Java, JavaScript, MATLAB, HTML/CSS, SQL, Go, Racket
+  \resumeSubItem{\textbf{Technologies:}}\hspace*{3.4em} Linux, Network Protocols, SDN, OpenDaylight, Ryu
+  \resumeSubItem{\textbf{Concentrations:}}\hspace*{2.4em} Signal Processing, Modulation Techniques
+  \resumeSubItem{\textbf{Tools \& Software:}}\hspace*{0.7em} MATLAB Simulink, Git, VS Code, IntelliJ, Bash, Wireshark, LTspice, Ansys
+\resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------
+\section{Featured Projects}
+\resumeSubHeadingListStart
+  \resumeProjectHeading
+    {\textbf{SDN Congestion Control in Mininet} $|$ Python, Mininet, SDN, OpenFlow, Ryu}{Winter 2026}
+      \resumeItemListStart
+      \resumeItem{Built SDN-based congestion control prototype using Mininet to emulate network topologies.}
+      \resumeItem{Implemented controller logic to monitor flow metrics and adjust routing under load.}
+    \resumeItemListEnd
+  \resumeProjectHeading
+    {\textbf{Multipath Interference Mitigation} $|$ Python, OFDM, Equalization, DSP}{Fall 2025}
+      \resumeItemListStart
+      \resumeItem{Implemented adaptive equalization techniques to combat multipath fading in wireless channels.}
+      \resumeItem{Achieved 30\% improvement in bit error rate under severe multipath conditions.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------
+\section{Experience \& Involvement}
+\resumeSubHeadingListStart
+  \resumeSubheading
+    {OEC-CIC Volunteer}{2025 -- Present}
+    {Ontario Engineering Competition}{Ottawa, ON}
+    \resumeItemListStart
+      \resumeItem{Supported event logistics and coordination for competition activities.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {CUSA Women's Centre Volunteer}{2022 -- Present}
+    {Carleton University}{Ottawa, ON}
+    \resumeItemListStart
+      \resumeItem{Supported initiatives focused on gender equity and student wellbeing.}
+    \resumeItemListEnd
+  \resumeSubheading
+    {IEEE Member}{2025 -- Present}
+    {Institute of Electrical and Electronics Engineers}{Ottawa, ON}
+    \resumeItemListStart
+      \resumeItem{Engaged with IEEE student branch activities and professional development resources.}
+    \resumeItemListEnd
+\resumeSubHeadingListEnd
+
+\end{document}

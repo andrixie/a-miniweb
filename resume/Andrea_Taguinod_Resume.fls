@@ -1,8 +1,8 @@
-PWD /Users/andreataguinod/workspace/Latex Resume/TEST
+PWD /Users/andreataguinod/Desktop/Personal Growth/MiniWeb/resume
 INPUT /usr/local/texlive/2025/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt
-INPUT /Users/andreataguinod/workspace/Latex Resume/TEST/Andrea_Taguinod_Resume.tex
+INPUT /Users/andreataguinod/Desktop/Personal Growth/MiniWeb/resume/Andrea_Taguinod_Resume.tex
 OUTPUT Andrea_Taguinod_Resume.log
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2025/texmf-dist/tex/latex/base/article.cls

@@ -1,6 +1,6 @@
 # Fdb version 4
-["pdflatex"] 1767812847.06753 "/Users/andreataguinod/workspace/Latex Resume/TEST/Andrea_Taguinod_Resume.tex" "Andrea_Taguinod_Resume.pdf" "Andrea_Taguinod_Resume" 1767812847.62901 0
-  "/Users/andreataguinod/workspace/Latex Resume/TEST/Andrea_Taguinod_Resume.tex" 1767812846.70986 8111 61443f50e76fef8ee299c3c36c57917c ""
+["pdflatex"] 1770871118.37126 "/Users/andreataguinod/Desktop/Personal Growth/MiniWeb/resume/Andrea_Taguinod_Resume.tex" "Andrea_Taguinod_Resume.pdf" "Andrea_Taguinod_Resume" 1770871119.00879 0
+  "/Users/andreataguinod/Desktop/Personal Growth/MiniWeb/resume/Andrea_Taguinod_Resume.tex" 1770871118.14203 7958 211f4a05e65aaf54067e16815ad45b34 ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc" 1202520719 2840 216e6e45ad352e2456e1149f28885bee ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc" 1202520719 2327 9d6df24f9c4f7368395224341a95523a ""
   "/usr/local/texlive/2025/texmf-dist/fonts/enc/dvips/lm/lm-rmsc.enc" 1202520719 2355 3e74b90173fc699673a5163cee277702 ""
@@ -100,9 +100,9 @@
   "/usr/local/texlive/2025/texmf-var/fonts/map/pdftex/updmap/pdftex.map" 1746667610 5467155 19efa205003f9ecad95fbbaa6ff24da1 ""
   "/usr/local/texlive/2025/texmf-var/web2c/pdftex/pdflatex.fmt" 1741450574 3345740 46b66fdb0378f7bf5921b5eabf1762b8 ""
   "/usr/local/texlive/2025/texmf.cnf" 1741450484 577 418a7058ec8e006d8704f60ecd22c938 ""
-  "Andrea_Taguinod_Resume.aux" 1767812847.57128 829 67c9f790f89df13614cddd4180e4563c "pdflatex"
-  "Andrea_Taguinod_Resume.out" 1767812847.57177 544 90d51d19d811dd1656989e5fd8e9f4d6 "pdflatex"
-  "Andrea_Taguinod_Resume.tex" 1767812846.70986 8111 61443f50e76fef8ee299c3c36c57917c ""
+  "Andrea_Taguinod_Resume.aux" 1770871118.94817 711 271032c8e0a3ef8bad9b6884ae725b72 "pdflatex"
+  "Andrea_Taguinod_Resume.out" 1770871118.94876 390 68966ab496c9280e8bd935f142303ba0 "pdflatex"
+  "Andrea_Taguinod_Resume.tex" 1770871118.14203 7958 211f4a05e65aaf54067e16815ad45b34 ""
   (generated)
   "Andrea_Taguinod_Resume.aux"
   "Andrea_Taguinod_Resume.log"
