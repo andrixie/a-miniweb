@@ -4,14 +4,21 @@
  <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrea Taguinod - Communication Engineering Student</title>
-    <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@400;700&display=swap" rel="stylesheet">
+    <meta name="description" content="Fourth-year Communication Engineering student at Carleton University specializing in signal processing and network communications.">
+    <meta property="og:title" content="Andrea Taguinod - Communication Engineering Student">
+    <meta property="og:description" content="Fourth-year Communication Engineering student at Carleton University specializing in signal processing and network communications.">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="fairy">🧚‍♀️</div>
     <nav class="navbar">
         <div class="nav-container">
-            <div class="logo">Andrea Taguinod</div>
+            <div class="logo">
+                <img src="figure/me.jpg" alt="Andrea Taguinod" class="logo-img">
+                HEYA!
+            </div>
             <ul class="nav-menu">
                 <li><a href="#home" class="nav-link">Home</a></li>
                 <li><a href="#about" class="nav-link">About</a></li>
@@ -31,6 +38,7 @@
             <p class="tagline">4th Year Communication Engineering Student | Carleton University</p>
             <div class="hero-links">
                 <a href="mailto:andreataguinod@cmail.carleton.ca" class="cta-button">Get In Touch</a>
+                <a href="resume/Andrea_Taguinod_Resume.pdf" target="_blank" class="cta-button outline">Download Resume</a>
                 <a href="https://linkedin.com/in/andrea-taguinod" target="_blank" class="cta-button outline">LinkedIn</a>
                 <a href="https://github.com/andrixie" target="_blank" class="cta-button outline">GitHub</a>
             </div>
@@ -41,20 +49,20 @@
         <h2>About Me</h2>
         <div class="about-content">
             <div class="about-text">
-                <p>I'm a 4th year Communication Engineering student at Carleton University, expected to graduate in April 2027. I'm passionate about signal processing, network communications, and building robust systems that work reliably in real-world conditions.</p>
-                <p>Currently, I volunteer with the CUSA Women's Centre and Perley Health while working as a Customer Service Manager at Walmart Canada. I'm also a member of IEEE (Institute of Electrical and Electronics Engineers) and actively engage with the technical community.</p>
+                <p>Fourth-year Communication Engineering student at Carleton University, graduating April 2027, focused on signal processing and network communications.</p>
+                <p>Volunteer with the CUSA Women’s Centre and OEC-CIC, and an IEEE member engaged in the technical community.</p>
             </div>
             <div class="about-highlights">
                 <div class="highlight-item">
-                    <h3>📍 Location</h3>
+                    <h3>Location</h3>
                     <p>Ottawa, Ontario</p>
                 </div>
                 <div class="highlight-item">
-                    <h3>📞 Contact</h3>
+                    <h3>Contact</h3>
                     <p>+1 (613) 263 7519</p>
                 </div>
                 <div class="highlight-item">
-                    <h3>✉️ Email</h3>
+                    <h3>Email</h3>
                     <p>andreataguinod@cmail.carleton.ca</p>
                 </div>
             </div>
@@ -82,18 +90,23 @@
                 <h3>Technologies</h3>
                 <div class="skill-tags">
                     <span class="skill-tag">Linux</span>
-                    <span class="skill-tag">Docker</span>
-                    <span class="skill-tag">REST APIs</span>
-                    <span class="skill-tag">gRPC</span>
-                    <span class="skill-tag">Node.js</span>
-                    <span class="skill-tag">MATLAB Simulink</span>
-                    <span class="skill-tag">Signal Processing</span>
                     <span class="skill-tag">Network Protocols</span>
+                    <span class="skill-tag">SDN</span>
+                    <span class="skill-tag">OpenDaylight</span>
+                    <span class="skill-tag">Ryu</span>   
+                </div>
+            </div>
+            <div class="skill-category">
+                <h3>Concentrations</h3>
+                <div class="skill-tags">
+                    <span class="skill-tag">Signal Processing</span>
+                    <span class="skill-tag">Modulation Techniques</span>
                 </div>
             </div>
             <div class="skill-category">
                 <h3>Tools & Software</h3>
                 <div class="skill-tags">
+                    <span class="skill-tag">MATLAB Simulink</span>
                     <span class="skill-tag">Git</span>
                     <span class="skill-tag">VS Code</span>
                     <span class="skill-tag">IntelliJ</span>
@@ -110,7 +123,10 @@
         <h2>Featured Projects</h2>
         <div class="projects-grid">
             <div class="project-card">
-                <h3>Video Streaming System: Frame-Synced GIF Playback</h3>
+                <div class="project-header">
+                    <h3>Video Streaming System: Frame-Synced GIF Playback</h3>
+                    <span class="project-date">Fall 2025</span>
+                </div>
                 <p class="project-tech">Python • Socket Programming • RTSP • RTP</p>
                 <ul class="project-details">
                     <li>Built a video streaming system using RTSP for session control and RTP for packetized frame delivery</li>
@@ -120,7 +136,23 @@
             </div>
 
             <div class="project-card">
-                <h3>Acoustic Digital Messaging</h3>
+                <div class="project-header">
+                    <h3>SDN Congestion Control in Mininet</h3>
+                    <span class="project-date">Winter 2026</span>
+                </div>
+                <p class="project-tech">Python • Mininet • SDN • OpenFlow • Ryu</p>
+                <ul class="project-details">
+                    <li>Built an SDN-based congestion control prototype using Mininet to emulate network topologies</li>
+                    <li>Implemented controller logic to monitor flow metrics and adjust routing under load</li>
+                    <li>Evaluated throughput and latency improvements across congested scenarios</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Acoustic Digital Messaging</h3>
+                    <span class="project-date">Fall 2024</span>
+                </div>
                 <p class="project-tech">MATLAB • Signal Processing • BPSK • Audio Transmission</p>
                 <ul class="project-details">
                     <li>Built an acoustic communication system in MATLAB to transmit digital messages using BPSK-modulated sound waves</li>
@@ -130,12 +162,41 @@
             </div>
 
             <div class="project-card">
-                <h3>Network Packet Sniffer</h3>
+                <div class="project-header">
+                    <h3>Network Packet Sniffer</h3>
+                    <span class="project-date">Spring 2025</span>
+                </div>
                 <p class="project-tech">C • Libpcap • Packet Filtering • Network Analysis</p>
                 <ul class="project-details">
                     <li>Developed a packet sniffer in C using sockets to capture and analyze live TCP/UDP packets</li>
                     <li>Implemented advanced packet filtering based on IP address, port number, and protocol type</li>
                     <li>Achieved real-time packet capture with minimal overhead using non-blocking I/O</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Wireless Channel Propagation Analyzer</h3>
+                    <span class="project-date">Winter 2025</span>
+                </div>
+                <p class="project-tech">MATLAB • Wireless Communications • Path Loss Modeling</p>
+                <ul class="project-details">
+                    <li>Developed propagation models to simulate signal attenuation in various wireless environments</li>
+                    <li>Implemented Friis transmission equation and log-distance path loss models for coverage analysis</li>
+                    <li>Analyzed fading characteristics and optimized antenna placement for maximum signal strength</li>
+                </ul>
+            </div>
+
+            <div class="project-card">
+                <div class="project-header">
+                    <h3>Multipath Interference Mitigation System</h3>
+                    <span class="project-date">Fall 2025</span>
+                </div>
+                <p class="project-tech">Python • OFDM • Equalization • DSP</p>
+                <ul class="project-details">
+                    <li>Implemented adaptive equalization techniques to combat multipath fading in wireless channels</li>
+                    <li>Applied OFDM modulation with cyclic prefix to reduce inter-symbol interference</li>
+                    <li>Achieved 30% improvement in bit error rate under severe multipath conditions</li>
                 </ul>
             </div>
         </div>
@@ -146,26 +207,13 @@
         <div class="experience-timeline">
             <div class="experience-item">
                 <div class="experience-header">
-                    <h3>Customer Service Manager</h3>
-                    <span class="date">Sep 2020 – Present</span>
+                    <h3>OEC-CIC Volunteer</h3>
+                    <span class="date">2025 – Present</span>
                 </div>
-                <p class="company">Walmart Canada • Ottawa, ON</p>
+                <p class="company">Ontario Engineering Competition (OEC-CIC) • Ottawa, ON</p>
                 <ul class="experience-details">
-                    <li>Promoted from Cashier to Customer Service Manager, leading front-end operations</li>
-                    <li>Trained and mentored new hires on POS systems and customer service excellence</li>
-                    <li>Resolved escalated customer concerns and improved satisfaction metrics</li>
-                </ul>
-            </div>
-
-            <div class="experience-item">
-                <div class="experience-header">
-                    <h3>Volunteer Caretaker</h3>
-                    <span class="date">2023 – Present</span>
-                </div>
-                <p class="company">Perley Health • Ottawa, ON</p>
-                <ul class="experience-details">
-                    <li>Provided companionship and support to residents in a long-term care facility</li>
-                    <li>Assisted with recreational activities fostering social interaction and engagement</li>
+                    <li>Supported event logistics and coordination for competition activities</li>
+                    <li>Assisted teams, judges, and organizers to ensure smooth competition flow</li>
                 </ul>
             </div>
 
@@ -201,19 +249,15 @@
             <p>Feel free to reach out for collaboration opportunities, questions, or just to chat!</p>
             <div class="contact-links">
                 <a href="mailto:andreataguinod@cmail.carleton.ca" class="contact-link">
-                    <span class="contact-icon">✉️</span>
                     <span>Email</span>
                 </a>
                 <a href="https://linkedin.com/in/andrea-taguinod" target="_blank" class="contact-link">
-                    <span class="contact-icon">💼</span>
                     <span>LinkedIn</span>
                 </a>
                 <a href="https://github.com/andrixie" target="_blank" class="contact-link">
-                    <span class="contact-icon">💻</span>
                     <span>GitHub</span>
                 </a>
                 <a href="tel:+16132637519" class="contact-link">
-                    <span class="contact-icon">📱</span>
                     <span>Phone</span>
                 </a>
             </div>
@@ -224,35 +268,49 @@
         <p>&copy; 2026 Andrea Taguinod.</p>
     </footer>
 
-<script>
-    function speakCute() {
-        const msg = new SpeechSynthesisUtterance("Hello there!");
+    <div id="progress-bar"></div>
+    <button id="back-to-top" title="Back to top">↑</button>
 
-        const voices = speechSynthesis.getVoices();
-        const cuteVoice = voices.find(v =>
-          v.name.toLowerCase().includes("female") ||
-          v.name.toLowerCase().includes("samantha") ||
-          v.name.toLowerCase().includes("google") ||
-          v.name.toLowerCase().includes("zira")
-        );
+    <script>
+        // Progress bar
+        window.addEventListener('scroll', () => {
+            const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+            const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+            const scrolled = (winScroll / height) * 100;
+            document.getElementById('progress-bar').style.width = scrolled + '%';
+        });
 
-        if (cuteVoice) msg.voice = cuteVoice;
+        // Back to top button
+        const backToTop = document.getElementById('back-to-top');
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTop.classList.add('show');
+            } else {
+                backToTop.classList.remove('show');
+            }
+        });
 
-        msg.pitch = 1.5;   // cuteness
-        msg.rate = 1.05;   // friendly speed
-        msg.volume = 1;
+        backToTop.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
 
-        speechSynthesis.speak(msg);
-      }
+        // Fade-in animations on scroll
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
 
-      document.addEventListener("click", () => {
-        speakCute();
-      }, { once: true });
-    /* Fairy follows cursor */
-    const fairy = document.getElementById("fairy");
-    document.addEventListener("mousemove", (e) => {
-        fairy.style.transform = `translate(${e.clientX + 12}px, ${e.clientY + 12}px)`;
-    });
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('fade-in');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.project-card, .experience-item, .skill-category').forEach(el => {
+            observer.observe(el);
+        });
     </script>
 </body>
 </html>
